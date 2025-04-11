@@ -1,1 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Your Key</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #111;
+      font-family: 'Arial', sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      color: #00ff88;
+      overflow: hidden;
+    }
+
+    .container {
+      text-align: center;
+      background-color: rgba(0, 0, 0, 0.7);
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 0 30px #00ff88;
+      width: 80%;
+      max-width: 500px;
+    }
+
+    h1 {
+      font-size: 32px;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 18px;
+      margin-bottom: 20px;
+    }
+
+    .key {
+      font-size: 24px;
+      font-weight: bold;
+      color: #ffcc00;
+      margin-top: 20px;
+    }
+
+    .footer {
+      font-size: 12px;
+      color: #aaa;
+      margin-top: 30px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h1>Congratulations! 🎉</h1>
+    <p>You completed the task! Here is your key:</p>
+
+    <!-- Display key here -->
+    <div class="key" id="key">Loading...</div>
+
+    <div class="footer">
+      <p>Powered by yourgame.dev | All rights reserved.</p>
+    </div>
+  </div>
+
+  <script>
+    // Simulate getting the key after task completion
+    function generateKey() {
+      // You could generate a key dynamically or fetch from a server
+      const key = 'XYZ123-ABC456-DEF789';  // This is an example key
+      document.getElementById('key').innerText = key;
+    }
+
+    // Wait for the page to load and then generate the key
+    window.onload = generateKey;
+  </script>
+</body>
+</html>
 
